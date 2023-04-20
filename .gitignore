@@ -5,6 +5,6 @@
 .recommenders
 bin/
 .mvn/
-HELP.metadata
+.md
 mvnw
-mvnm.cmd
+.cmd
