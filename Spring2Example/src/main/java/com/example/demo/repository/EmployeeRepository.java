@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.example.demo.entity.Employee;
-@Repository
+@Repository//
 public interface EmployeeRepository extends CrudRepository<Employee,Integer> {
 	
 	//fingByxxxxx>>>control+Space>>all parameters given
@@ -23,4 +23,10 @@ public interface EmployeeRepository extends CrudRepository<Employee,Integer> {
 	@Query(value="update employee set salary=? where empid=?",nativeQuery = true)
 	public void updateSalary(int salary,int empid);
 	
+	
+//	So, when you use a method that is declared in the CRUD repository interface,
+//	Spring Data JPA will generate a concrete implementation of that method at runtime 
+//	and execute it on the underlying database.
+
 }	
+

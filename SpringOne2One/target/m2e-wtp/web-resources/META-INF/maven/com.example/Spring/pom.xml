@@ -57,9 +57,7 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency><!-- this dependency also provides dependencies of Junit and Mockito-->
-		
-		<!-- logger file dependency-->
-	
+			
 	</dependencies>
 
 	<build>
